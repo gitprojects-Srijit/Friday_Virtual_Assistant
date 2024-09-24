@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Protest+Guerrilla&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+    padding: 20px;
+    font-family: sans-serif;
+}
+.logo {
+    width: 20vw; 
+}
+h1 {
+    color: white;
+    font-weight: 600;
+    align-items: center;
+    font-size: 2.4vw; 
+    text-align: center;
+}
+#name {
+    color: rgb(206, 30, 153);
+    font-size: 2.8vw; 
+    font-family: "Protest Guerrilla", sans-serif;
+}
+#assist {
+    color: rgb(120, 22, 190);
+    font-size: 2.8vw; 
+    font-family: "Protest Guerrilla", sans-serif;
+}
+.voice {
+    width: 280px;
+    display: none;
+}
+.btn {
+    width: 32vw; 
+    background: linear-gradient(to right, rgb(154, 50, 228), rgb(224, 76, 180));
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.4vw; 
+    border-radius: 20px;
+    border: none;
+    color: aliceblue;
+    box-shadow: 2px 2px 10px rgb(154, 50, 228),
+                2px 2px 10px rgb(224, 76, 180);
+    transition: all 0.5s;
+    cursor: pointer;
+    text-align: center;
+}
+.btn:hover {
+    box-shadow: 2px 2px 20px rgb(154, 50, 228),
+                2px 2px 20px rgb(224, 76, 180);
+    letter-spacing: 5px;
+}
+
+/* Responsive for large desktops */
+@media (max-width: 1200px) {
+    .logo {
+        width: 25vw;
+    }
+    h1 {
+        font-size: 36px;
+    }
+    #name, #assist {
+        font-size: 36px;
+    }
+    .btn {
+        width: 30%;
+        font-size: 18px;
+    }
+}
+
+/* Responsive for tablets */
+@media (max-width: 768px) {
+    .logo {
+        width: 50vw;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    #name, #assist {
+        font-size: 32px;
+    }
+    .btn {
+        width: 50%;
+        font-size: 18px;
+        padding: 8px;
+    }
+}
+
+/* Responsive for mobile */
+@media (max-width: 490px) {
+    .logo {
+        width: 70vw;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    #name, #assist {
+        font-size: 28px;
+    }
+    .btn {
+        width: 80%;
+        font-size: 16px;
+        padding: 6px;
+    }
+    body {
+        gap: 20px;
+    }
+}
